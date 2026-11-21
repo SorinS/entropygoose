@@ -1,7 +1,0 @@
-// entropy's sidecar: the OS's random bytes (src/entropy.c), compiled
-// only into programs that call them. Windows: BCryptGenRandom.
-c_sources = ["src/entropy.c"];
-c_libs_windows = ["bcrypt"];
-
-// Programs, not the package's modules.
-exclude = ["examples", "test", "scripts"];
